@@ -64,6 +64,7 @@ typedef int (*create_listen_hw_t)(unsigned int snd_card,
 typedef void (*destroy_listen_hw_t)();
 
 typedef int (*open_listen_session_t)(struct audio_hw_device *,
+				    struct listen_open_params*,
                                     struct listen_session**);
 
 typedef int (*close_listen_session_t)(struct audio_hw_device *dev,
